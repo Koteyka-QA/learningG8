@@ -35,8 +35,3 @@ my_dictionary.add_employee("Kate", "dev", 1500)
 
 my_dictionary.increase_salary("Viktor")
 my_dictionary.display_employee_info("Kate")
-
-
-
-
-
