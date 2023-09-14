@@ -12,10 +12,6 @@ def process_input():
             print("Entered not valid data")
 
 
-# Function call:
-result = process_input()
-print("You entered:", result)
-
 # TASK2 Створити функцію, що приймає 2 рядки;
 # Якщо хоча б один рядок не виходить конвертувати в число, тоді робимо конкатенацію (з'єднуємо рядки),
 # якщо ж обидва значення можна конвертувати в числа, то отримуємо їх суму. Результат друкуємо в консоль.
@@ -23,14 +19,10 @@ def process_strings(str1, str2):
     try:
         num1 = int(str1)
         num2 = int(str2)
-        result = num1 + num2
+        return = num1 + num2
     except ValueError:
         concatenated = str1 + str2
         print("Concatenated:",concatenated)
-
-# Example for use
-string1 = input("Enter the first string: ")
-string2 = input("Enter the second string: ")
 
 # TASK3 Створити функцію, що приймає значення з консолі. Якщо значення не можна привести до числа,
 # тоді просимо користувача ввести інше значення, доки він не введе число. Згадуємо про цикл while.
@@ -46,9 +38,6 @@ def get_valid_number_input():
         except ValueError:
             print("Please enter a valid number.")
 
-# Function call
-valid_number = get_valid_number_input()
-
 # TASK4 Створити власне виключення. Наприклад OnlyEvenError. Створити функцію check_digit(), яка приймає число.
 # Якщо число не парне, то породжувати це своє виключення, якщо парне, то повертати його (return)
 
@@ -58,16 +47,6 @@ def check_digit(number):
     if number % 2 != 0:
         raise OnlyEvenError("Number must be even")
     return number
-
-# Приклад як використати:
-try:
-    input_number = int(input("Enter a number: "))
-    result = check_digit(input_number)
-    print("Result:", result)
-except OnlyEvenError as e:
-    print("Error:", e)
-except ValueError:
-    print("Pls enter a valid number.")
 
 # TASK5 Створити функцію, що буде приймати число як аргумент і викликАти в тілі функцію check_digit, в яку передавати це число.
 #   Якщо виникає помилка, то перехопити її, та збільшити вхідне число на 1. Інакше, помножити число на 2.
@@ -85,10 +64,3 @@ def process_and_print_result(number):
     finally:
         print("I always print something")
     print("Result:", result)
-
-# Example call function:
-try:
-    input_number = int(input("Enter a number: "))
-    process_and_print_result(input_number)
-except ValueError:
-    print("Pls enter valid number.")
