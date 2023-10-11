@@ -1,0 +1,19 @@
+Started by user [8mha:////4GrMUDfnWAjT81DQOTtDtacvG+rP3hOqIx2IaEx00etWAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/selenium
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/selenium/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Koteyka-QA/learningG8 # timeout=10
+Fetching upstream changes from https://github.com/Koteyka-QA/learningG8
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/Koteyka-QA/learningG8 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 6799f40f6b34ce12a7cd3daf409ba905a44c6731 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6799f40f6b34ce12a7cd3daf409ba905a44c6731 # timeout=10
+Commit message: "hw_exclusion.py"
+First time build. Skipping changelog.
+Finished: SUCCESS
